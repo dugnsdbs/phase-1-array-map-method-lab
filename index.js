@@ -24,7 +24,7 @@ const tutorials =
 
 const titleCased = () => {
   return tutorials.map(tutorial =>{
-      return tutorial.split(' ').map(word => word[0].toUpperCase() + word.substring(1, word.length)).join(' ')
+      return tutorial.split(' ').map(word => word[0].toUpperCase() + word.substring(1,-1)).join(' ')
   })
 }
 
@@ -32,14 +32,14 @@ titleCased(tutorials)
 
 
 
-const titleCased = () => {
-  tutorials.map(function (array){
-    let splitWord = array.split(" ");
-    let answer = "";
-    for(let i = 0; i < splitWord.length; i ++){
-      let firstCaseUpper = splitWord[i][0].toUpperCase() + splitWord[i].slice(1);
+// const titleCased = () => {
+//   tutorials.map(function (array){
+//     let splitWord = array.split(" ");
+//     let answer = "";
+//     for(let i = 0; i < splitWord.length; i ++){
+//       let firstCaseUpper = splitWord[i][0].toUpperCase() + splitWord[i].slice(1);
       
-    }
-  })
-  return tutorials
-}
+//     }
+//   })
+//   return tutorials
+// }
